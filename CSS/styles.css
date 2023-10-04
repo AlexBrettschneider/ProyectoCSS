@@ -332,12 +332,28 @@ footer {
 
 
 }@media (max-width:701px){
+    #header {
+        height: 90em;
+    }
+
+    #acerca-de {
+        height: 90em;
+    }
+
+    #proyectos {
+        height: 90em;
+    }
+
+    footer {
+        font-size: 1.4em;
+        color: #fff
+    }
     .navbar-btn {
         display: flex;
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
-        font-size: 2em;
+        font-size: 2.5em;
         font-family: 'Indie Flower', cursive;
     }
 
@@ -354,13 +370,35 @@ footer {
 
     .logo-logo {
         display: flex;
-        position: relative;
-        left: 0.45em;
+        font-size: 5em;
     }
 
     .logo-texto1 {
         display: flex;
-        position: relative;
-        left: 0.8em;
+        font-size: 2em;
+    }
+    
+    .container-right {
+        height: 52em;
+    }
+
+    .container-right h1 {
+        font-size: 3em;
+    }
+
+    .container-right p {
+        font-size: 2em;
+    }
+
+    .portfolio-box {
+        font-size: 2em;
+    }
+
+    .navbar-footer ul {
+        display: flex;
+    }
+
+    .navbar-footer a {
+        color: #fff;
     }
 }
