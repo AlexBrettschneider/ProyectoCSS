@@ -331,4 +331,36 @@ footer {
     }
 
 
+}@media (max-width:701px){
+    .navbar-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 2em;
+        font-family: 'Indie Flower', cursive;
+    }
+
+    .navbar-btn li {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .navbar-btn ul {
+        display: inline-block;
+        align-items: center;
+    }
+
+    .logo-logo {
+        display: flex;
+        position: relative;
+        left: 0.45em;
+    }
+
+    .logo-texto1 {
+        display: flex;
+        position: relative;
+        left: 0.8em;
+    }
 }
