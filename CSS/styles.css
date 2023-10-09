@@ -1,0 +1,480 @@
+/* HEADER */
+
+body {
+    background-image: linear-gradient(to bottom, rgb(206, 206, 206), rgb(83,83,83))
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40.88em;
+    /*background-image: url(../img/fondo-seccion1.png) ;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* BARRA DE NAVEGACION */
+
+#navbar {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.logo-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Tilt Prism', cursive;
+    color: #333333;
+    font-weight: 200;
+}
+
+.logo-texto1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Spectral SC', serif;
+    color: #333333;
+}
+
+.logo-texto2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    font-size: 1.2em;
+    font-family: 'Dawning of a New Day', cursive;
+    color: #333333;
+    position: relative;
+    left: 100px;
+}
+
+.navbar-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3em;
+    text-transform: uppercase;
+    font-size: 2em;
+    position: relative;
+    left: 65px;
+    top: 25px;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.navbar-btn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar-btn li {
+    display: inline-block;
+    margin-right: 1.3em;
+}
+
+.navbar-btn a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.navbar-btn a:hover {
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid;
+}
+
+/* ACERCA DE */
+
+#acerca-de {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50em;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 1400px;
+    float: left;
+    position: relative;
+}
+
+.container-left {
+    width: 37em;
+    height: 100%;
+    float:left;
+    margin-right:6%;
+    position:relative;
+    z-index:100;
+}
+
+.container-left img {
+    width: 100%;
+}
+
+/* IMAGEN MIA CON ANIMACION*/
+
+.personal-cuerpo {
+    position:absolute;
+    top: 72.8%;
+    left: 21.5%;
+    z-index:101;
+    width:70%;
+    transform: rotate(1deg);
+}
+
+.personal-cabeza {
+    position:absolute;
+    top: 14%;
+    left: 22%;
+    z-index: 102;
+    width: 63.6%;
+}
+
+.tossing{
+	animation-name: tossing;
+	-webkit-animation-name: tossing;
+	animation-duration: 3.5s;
+	-webkit-animation-duration: 3.5s;
+	transform-origin: 50% 90%;
+	-ms-transform-origin: 50% 90%;
+	-webkit-transform-origin: 50% 90%;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-3deg);	
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+	100% {
+		transform: rotate(-3deg);	
+	}						
+}
+
+@-webkit-keyframes tossing {
+	0% {
+		-webkit-transform: rotate(-3deg);	
+	}
+	50% {
+		-webkit-transform: rotate(3deg);
+	}
+	100% {
+		-webkit-transform: rotate(-3deg);	
+	}				
+}
+
+/* TEXTO SOBREE MI */
+
+.container-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 31em;
+    height: 31em;
+    align-content: center;
+    font-family: 'Indie Flower', cursive;
+    position: relative;
+
+}
+
+.container-right h1 {
+    font-size: 2.5em;
+}
+
+.container-right p {
+    font-size: 1.3em;
+}
+
+.container-right i{
+    font-size: 3em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    margin-top: 0.4em;
+    color: #333333;
+}
+
+.container-right i:hover {
+    -webkit-transform: scale(1.08) rotate(6deg);
+    transform: scale(1.08) rotate(6deg);
+    cursor:pointer;
+    color: #fff;
+}
+
+/* MAS DE MI */
+
+#mas-de-mi {
+    position: relative;
+    width: 100%;
+    height: 50em;
+    background-color: rgb(246, 246, 246);
+}
+
+.custom-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-divider svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 70px;
+}
+
+.custom-divider .shape-fill {
+    fill: rgb(157, 157, 157);
+}
+
+.custom-divider .shape-fill2 {
+    fill: rgb(246, 246, 246);
+}
+
+.container-me {
+    display: flex;
+    width: 100%;
+    height: 50em;
+    align-items: center;
+}
+
+.container-me__left {
+    display: flex;
+    width: 60%;
+    height: 42em;
+    margin-left: 1.5em;
+}
+
+.container-me__right {
+    display: flex;
+    width: 40%;
+    height: 42em;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-right {
+    width: 80%;
+}
+
+.img-right img {
+    box-shadow: 17px 17px 15px -4px rgba(46,45,46,0.73);
+}
+
+.texto-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* SECCION PROYECTOS*/
+
+#proyectos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65.88em;
+    color: #333333;
+    font-family: 'Indie Flower', cursive;
+}
+
+.portfolio-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1700px;
+    margin: 0px auto;
+    padding: 130px 0 50px 0; 
+}
+
+.portfolio-box {
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding: 10px 0 20px 0;
+    margin: 0 4em 0 5em;
+}
+
+#box img {
+    width: 100%;
+}
+
+.portfolio-box:hover {
+    -webkit-transform: scale(1.08) rotate(6deg);
+    transform: scale(1.08) rotate(6deg);
+    cursor:pointer;
+    color: #fff;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+}
+
+.navbar-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-footer li {
+    display: inline-block;
+    margin-right: 1em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.navbar-footer a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.navbar-footer a:hover {
+    color: #fff;
+}
+
+@media (max-width:1000px){
+    #header {
+        height: 60em;
+    }
+
+    #acerca-de {
+        height: 60em;
+    }
+
+    #proyectos {
+        height: 60em;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-left {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #box img {
+        width: 75%;
+    }
+
+
+}@media (max-width:801px){
+    #header {
+        height: 90em;
+    }
+
+    #acerca-de {
+        height: 90em;
+    }
+
+    #proyectos {
+        height: 90em;
+    }
+
+    footer {
+        font-size: 1.4em;
+        color: #fff
+    }
+    .navbar-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        font-family: 'Indie Flower', cursive;
+    }
+
+    .navbar-btn li {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .navbar-btn ul {
+        display: inline-block;
+        align-items: center;
+    }
+
+    .logo-logo {
+        display: flex;
+        font-size: 5em;
+    }
+
+    .logo-texto1 {
+        display: flex;
+        font-size: 2em;
+    }
+    
+    .container-right {
+        height: 52em;
+    }
+
+    .container-right h1 {
+        font-size: 3em;
+    }
+
+    .container-right p {
+        font-size: 2em;
+    }
+
+    .portfolio-box {
+        font-size: 2em;
+    }
+
+    .navbar-footer ul {
+        display: flex;
+    }
+
+    .navbar-footer a {
+        color: #fff;
+    }
+}
