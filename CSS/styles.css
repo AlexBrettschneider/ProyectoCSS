@@ -102,7 +102,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 40.88em;
+    height: 50em;
     color: #333333;
 }
 
@@ -184,6 +184,8 @@ body {
 	}				
 }
 
+/* TEXTO SOBREE MI */
+
 .container-right {
     display: flex;
     flex-wrap: wrap;
@@ -208,13 +210,85 @@ body {
     margin-right: 0.2em;
     margin-left: 0.2em;
     margin-top: 0.4em;
+    color: #333333;
 }
 
 .container-right i:hover {
     -webkit-transform: scale(1.08) rotate(6deg);
     transform: scale(1.08) rotate(6deg);
     cursor:pointer;
+    color: #fff;
 }
+
+/* MAS DE MI */
+
+#mas-de-mi {
+    position: relative;
+    width: 100%;
+    height: 50em;
+    background-color: rgb(246, 246, 246);
+}
+
+.custom-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-divider svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 70px;
+}
+
+.custom-divider .shape-fill {
+    fill: rgb(157, 157, 157);
+}
+
+.custom-divider .shape-fill2 {
+    fill: rgb(246, 246, 246);
+}
+
+.container-me {
+    display: flex;
+    width: 100%;
+    height: 50em;
+    align-items: center;
+}
+
+.container-me__left {
+    display: flex;
+    width: 60%;
+    height: 42em;
+    margin-left: 1.5em;
+}
+
+.container-me__right {
+    display: flex;
+    width: 40%;
+    height: 42em;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-right {
+    width: 80%;
+}
+
+.img-right img {
+    box-shadow: 17px 17px 15px -4px rgba(46,45,46,0.73);
+}
+
+.texto-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* SECCION PROYECTOS*/
 
@@ -228,7 +302,8 @@ body {
 }
 
 .portfolio-content {
-    width: 94%;
+    position: relative;
+    width: 100%;
     height: 100%;
     max-width: 1700px;
     margin: 0px auto;
@@ -236,20 +311,20 @@ body {
 }
 
 .portfolio-box {
-    width: 25%;
+    width: 20%;
     float: left;
     text-align: center;
     font-size: 1.2em;
     line-height: 1.4em;
-    padding: 20px 0 20px 0;
-    margin: 0 2em;
+    padding: 10px 0 20px 0;
+    margin: 0 4em 0 5em;
 }
 
 #box img {
     width: 100%;
 }
 
-.portfolio-box :hover {
+.portfolio-box:hover {
     -webkit-transform: scale(1.08) rotate(6deg);
     transform: scale(1.08) rotate(6deg);
     cursor:pointer;
@@ -270,6 +345,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.7em;
 }
 
 .navbar-footer ul {
@@ -286,7 +362,7 @@ footer {
 .navbar-footer a {
     text-decoration: none;
     color: #000;
-    font-size: 1em;
+
 }
 
 .navbar-footer a:hover {
